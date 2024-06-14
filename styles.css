@@ -1,0 +1,217 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e22d90, #4a00e0); /* Gradient background */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(190, 10, 151, 0.8); /* Semi-transparent white background for content */
+    border-radius: 0; /* Square container edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: linear-gradient(30deg,rgb(221, 41, 80),rgb(219, 209, 68));
+    color: rgb(248, 250, 244);
+    padding: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-section {
+    background: linear-gradient(30deg,rgb(189, 44, 88),rgb(224, 226, 130)) ; /* Darker background color */
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    border-radius: 10px ; /* Square corners */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.countdown-section .miu-title {
+    background-color: #fff; /* White background */
+    color: #333; /* Text color */
+    padding: 15px; /* Padding */
+    border-radius: 50%; /* Full circle */
+    width: 80px; /* Set width for circular shape */
+    height: 80px; /* Set height for circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px; /* Center and add bottom margin */
+}
+
+.club-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: #333 2px solid;
+    font-size: medium;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#timer div {
+    background: linear-gradient(120deg,rgb(216, 218, 107),rgb(212, 33, 93)) ;
+    color: #fdfdfd;
+    padding: 15px 20px;
+    border-radius: 20px; /* Square corners */
+    font-size: 1.5em;
+    min-width: 60px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 1s infinite; /* Apply animation */
+}
+
+.about-section {
+    background: linear-gradient(20deg,rgb(255, 0, 140),rgb(255, 131, 82)); /* Darker background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 10px; /* Square corners */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.about-section .club-text {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color:transparent;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0; /* Square corners */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .countdown-section h2 {
+        font-size: 1.5em;
+    }
+
+    .countdown-section .miu-title {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2em;
+    }
+
+    #timer div {
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+
+    .about-section .club-text {
+        font-size: 1.2em;
+    }
+
+    .footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* CSS Animation */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Reset and basic styling */
+/* Existing styles... */
+
+header {
+    /* Existing styles... */
+    opacity: 0; /* Initially hide the header */
+}
+
+/* Fade in animation for the header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to the header */
+header {
+    animation: fadeIn 1s ease forwards;
+}
+
+.footer {
+    /* Existing styles... */
+    opacity: 0; /* Initially hide the header */
+}
+
+/* Fade in animation for the header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to the header */
+.footer {
+    animation: fadeIn 1s ease forwards;
+}
