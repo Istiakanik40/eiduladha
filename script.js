@@ -17,7 +17,7 @@ function countdownTimer() {
             const gif = document.createElement('img');
             gif.src = 'eid_adha.gif';
             gif.alt = 'Celebration GIF';
-            gif.classList.add('celebration-gif');
+            gif.classList.add('eid_adha.gif');
             gifContainer.innerHTML = ''; // Clear the container
             gifContainer.appendChild(gif);
 
