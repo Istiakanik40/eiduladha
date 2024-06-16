@@ -20,7 +20,6 @@ function countdownTimer() {
             gif.classList.add('celebration.gif');
             gifContainer.innerHTML = ''; // Clear the container
             gifContainer.appendChild(gif);
-
             return;
         }
 
